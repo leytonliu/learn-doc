@@ -8,11 +8,14 @@ export default defineConfig({
   title: '前端知识汇总',
   description: 'Vite & Vue powered static site generator.',
   appearance: true, // If the option is set to true, the default theme will be determined by the user's preferred color scheme.
+  
   lastUpdated: true,
   cleanUrls: true,
+
   markdown: {
-    theme: 'material-theme-palenight',
-    lineNumbers: true
+    headers: {
+      level: [0, 0]
+    }
   },
 
   themeConfig: {
@@ -23,13 +26,16 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/leytonliu/learn-doc/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/leytonliu/learn-doc' }
     ],
-
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present Leyton Liu'
+    },
   }
 
 
