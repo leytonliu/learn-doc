@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/',
+  base: '/learn-doc',
   title: '前端知识汇总',
   description: 'Vite & Vue powered static site generator.',
   appearance: true, // If the option is set to true, the default theme will be determined by the user's preferred color scheme.
