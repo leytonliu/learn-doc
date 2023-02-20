@@ -36,7 +36,15 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present Leyton Liu'
     },
-  }
+    algolia: {
+      appId: 'VCD4E0OQK2', // 需要替换
+      apiKey: 'd243e2acc42627116946c2834a5e176c', // 需要替换
+      indexName: 'learn-doc', // 需要替换
+      placeholder: '请输入关键词',
+    }
+  },
+
+
 
 
 })
